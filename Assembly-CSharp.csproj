@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{83bc315a-2925-eaf5-1e03-9ecdf8d7b7dd}</ProjectGuid>
+    <ProjectGuid>{bd758476-5cc8-e400-4a1e-d53300fdcb6f}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -564,34 +564,34 @@
         <HintPath>/home/thiago/Unity/Hub/Editor/2019.4.28f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/mscorlib.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
-        <HintPath>/home/thiago/Documentos/Motores de Jogos I/Pinball 3D/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+        <HintPath>/home/thiago/Documentos/Motores de Jogos I/Pinball-3D/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-        <HintPath>/home/thiago/Documentos/Motores de Jogos I/Pinball 3D/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+        <HintPath>/home/thiago/Documentos/Motores de Jogos I/Pinball-3D/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-        <HintPath>/home/thiago/Documentos/Motores de Jogos I/Pinball 3D/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+        <HintPath>/home/thiago/Documentos/Motores de Jogos I/Pinball-3D/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-        <HintPath>/home/thiago/Documentos/Motores de Jogos I/Pinball 3D/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+        <HintPath>/home/thiago/Documentos/Motores de Jogos I/Pinball-3D/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-        <HintPath>/home/thiago/Documentos/Motores de Jogos I/Pinball 3D/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+        <HintPath>/home/thiago/Documentos/Motores de Jogos I/Pinball-3D/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-        <HintPath>/home/thiago/Documentos/Motores de Jogos I/Pinball 3D/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+        <HintPath>/home/thiago/Documentos/Motores de Jogos I/Pinball-3D/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-        <HintPath>/home/thiago/Documentos/Motores de Jogos I/Pinball 3D/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+        <HintPath>/home/thiago/Documentos/Motores de Jogos I/Pinball-3D/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualStudio.Editor">
-        <HintPath>/home/thiago/Documentos/Motores de Jogos I/Pinball 3D/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
+        <HintPath>/home/thiago/Documentos/Motores de Jogos I/Pinball-3D/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-        <HintPath>/home/thiago/Documentos/Motores de Jogos I/Pinball 3D/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+        <HintPath>/home/thiago/Documentos/Motores de Jogos I/Pinball-3D/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-        <HintPath>/home/thiago/Documentos/Motores de Jogos I/Pinball 3D/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+        <HintPath>/home/thiago/Documentos/Motores de Jogos I/Pinball-3D/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

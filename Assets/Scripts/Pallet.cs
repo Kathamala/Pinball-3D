@@ -4,47 +4,35 @@ using UnityEngine;
 
 public class Pallet : MonoBehaviour
 {
-    public GameObject pivot;
-    public int side; //0 left 1 right
-    public float maxDegree = 25;
-    public float minDegree = -20;
+    public float restPosition = 0f;
+    public float pressedPosition = 45f;
+    public float hitStrenght = 10000f;
+    public float flipperDamper = 150f;
 
+    HingeJoint hinge;
 
-    // Start is called before the first frame update
+    public string inputName;
+
     void Start()
     {
-        if(side == 0){
-            transform.RotateAround(pivot.transform.position, Vector3.right, 25);
-        } else{
-            transform.RotateAround(pivot.transform.position, Vector3.left, 25);
-        }
+        hinge = GetComponent<HingeJoint>();
+        hinge.useSpring = true;
 
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
+        JointSpring spring = new JointSpring();
+        spring.spring = hitStrenght;
+        spring.damper = flipperDamper;
 
-        if (Input.GetKeyDown(KeyCode.LeftArrow) && side == 0)
-        {
-            /*
-            while(transform.rotation.x > minDegree){
-                
-            }*/
-            transform.RotateAround(pivot.transform.position, Vector3.left, 1);
+        if(Input.GetAxis(inputName) == 1){
+            spring.targetPosition = pressedPosition;
+        } else{
+            spring.targetPosition = restPosition;
         }
-        
-        if(Input.GetKeyUp(KeyCode.LeftArrow) && side == 0){
-            transform.RotateAround(pivot.transform.position, Vector3.right, 1);
-        }
-
-        if (Input.GetKeyDown(KeyCode.RightArrow) && side == 1)
-        {
-            transform.RotateAround(pivot.transform.position, Vector3.right, 1);
-        }
-        
-        if(Input.GetKeyUp(KeyCode.RightArrow) && side == 1){
-            transform.RotateAround(pivot.transform.position, Vector3.left, 1);
-        }
+        hinge.spring = spring;
+        hinge.useLimits = true;
     }
 }
