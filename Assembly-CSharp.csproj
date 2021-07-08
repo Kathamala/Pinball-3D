@@ -37,6 +37,8 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Ball.cs" />
+     <Compile Include="Assets\Scripts\GameOverScreen.cs" />
+     <Compile Include="Assets\Scripts\GameScript.cs" />
      <Compile Include="Assets\Scripts\Pallet.cs" />
      <Compile Include="Assets\Scripts\PlangerScript.cs" />
     <Reference Include="UnityEngine">
