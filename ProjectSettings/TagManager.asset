@@ -10,6 +10,8 @@ TagManager:
   - 20Points
   - 10Points
   - 2Points
+  - 3Points
+  - Teleporter
   layers:
   - Default
   - TransparentFX

@@ -5,14 +5,12 @@ using UnityEngine;
 public class Ball : MonoBehaviour
 {
     public int amountOfBalls = 3;
-    // Start is called before the first frame update
 
     [HideInInspector] public bool isOnGame = false;
 
     [HideInInspector] public int points = 0;
     void Start()
     {
-        
     }
 
     // Update is called once per frame
@@ -32,10 +30,8 @@ public class Ball : MonoBehaviour
                 amountOfBalls--;
             }
 
-            if(amountOfBalls != 0){
-                transform.position = new Vector3(14f, 1.1f, -12f);
-                isOnGame = false;
-            }
+            transform.position = new Vector3(14f, 1.1f, -12f);
+            isOnGame = false;
         }
 
     }
@@ -61,6 +57,14 @@ public class Ball : MonoBehaviour
         if (other.gameObject.CompareTag("2Points"))
         {
             points += 2;
+        }
+        if (other.gameObject.CompareTag("3Points"))
+        {
+            points += 3;
+        }
+        if (other.gameObject.CompareTag("Teleporter"))
+        {
+            transform.position = new Vector3(Random.Range(-8f, 8f), transform.position.y, Random.Range(0f, 15f));
         }
     }
 }

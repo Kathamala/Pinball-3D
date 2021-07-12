@@ -7,6 +7,9 @@ using UnityEngine.SceneManagement;
 public class GameOverScreen : MonoBehaviour
 {
     public Text pointsText;
+    public GameObject ball;
+    public GameObject game;
+    [HideInInspector] public bool restart = false;
 
     public void Setup(int score){
         gameObject.SetActive(true);
@@ -14,7 +17,8 @@ public class GameOverScreen : MonoBehaviour
     }
 
     public void RestartButton(){
-        SceneManager.LoadScene("Game");
+        restart = true;
+        gameObject.SetActive(false);
     }
 
     public void QuitButton(){
