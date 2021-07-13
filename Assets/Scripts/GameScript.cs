@@ -11,6 +11,7 @@ public class GameScript : MonoBehaviour
     public Text scoreText;
     public Text ballsText;
     public GameObject door;
+    public GameObject catalog;
     private bool gameOver = false;
     const int RANKING_SIZE = 5;
     [HideInInspector] public int[] ranking = new int[RANKING_SIZE];
@@ -35,6 +36,7 @@ public class GameScript : MonoBehaviour
             ball.GetComponent<Ball>().points = 0;
             scoreText.gameObject.SetActive(true);
             ballsText.gameObject.SetActive(true);
+            catalog.gameObject.SetActive(true);
             gameOver = false;
         }
 
@@ -46,6 +48,7 @@ public class GameScript : MonoBehaviour
                 ball.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePosition;
                 scoreText.gameObject.SetActive(false);
                 ballsText.gameObject.SetActive(false);
+                catalog.gameObject.SetActive(false);
                 gameOver = true;
                 GameOver();
             }
@@ -60,10 +63,10 @@ public class GameScript : MonoBehaviour
         }
         
         if(scoreText != null){
-            scoreText.text = "Points: " + score;
+            scoreText.text = "Pontos: " + score;
         }
 
-        ballsText.text = "Amount of balls: " + ball.GetComponent<Ball>().amountOfBalls;
+        ballsText.text = "Bolas: " + ball.GetComponent<Ball>().amountOfBalls;
     }
 
     public void GameOver(){

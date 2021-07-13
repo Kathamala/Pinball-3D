@@ -12,9 +12,11 @@ public class GameOverScreen : MonoBehaviour
     public GameObject ball;
     public GameObject game;
     [HideInInspector] public bool restart = false;
+
+    
     public void Setup(int score){
         gameObject.SetActive(true);
-        pointsText.text = score.ToString() + " POINTS";
+        pointsText.text = score.ToString() + " PONTOS";
 
         rankingText.text = rankingToString(game.GetComponent<GameScript>().ranking);
     }
@@ -34,7 +36,7 @@ public class GameOverScreen : MonoBehaviour
         
         for(int i=0; i < array.Length; i++){
             if(array[i] != 0){
-                final += (i+1) + "- " + array[i].ToString() + " points\n";
+                final += (i+1) + "- " + array[i].ToString() + " pontos\n";
             }
         }
 
