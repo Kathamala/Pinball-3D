@@ -12,11 +12,15 @@ public class GameScript : MonoBehaviour
     public Text ballsText;
     public GameObject door;
     private bool gameOver = false;
+    const int RANKING_SIZE = 5;
+    [HideInInspector] public int[] ranking = new int[RANKING_SIZE];
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        for(int i=0; i<RANKING_SIZE; i++){
+            ranking[i] = 0;
+        }
     }
 
     // Update is called once per frame
@@ -63,6 +67,24 @@ public class GameScript : MonoBehaviour
     }
 
     public void GameOver(){
+        if(ranking[RANKING_SIZE-1] < score){
+            ranking[RANKING_SIZE-1] = score;
+            orderRanking();
+        }
         GameOverScreen.Setup(score);
+    }
+
+    private void orderRanking(){
+        int temp;
+
+        for(int i=0; i < ranking.Length; i++){
+            for(int j=0; j < ranking.Length; j++){
+                if(ranking[i] > ranking[j]){
+                    temp = ranking[i];
+                    ranking[i] = ranking[j];
+                    ranking[j] = temp;
+                }
+            }
+        }
     }
 }
