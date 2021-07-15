@@ -249,11 +249,11 @@ RectTransform:
   m_Father: {fileID: 725936292}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -16, y: -23}
   m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 1, y: 1}
 --- !u!1 &54381491
 GameObject:
   m_ObjectHideFlags: 0
@@ -966,11 +966,11 @@ RectTransform:
   m_Father: {fileID: 9712975}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 233.70003, y: 251.59}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -200.5, y: -1.5}
   m_SizeDelta: {x: 48, y: 48}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 1, y: 1}
 --- !u!114 &212201374
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1037,11 +1037,11 @@ RectTransform:
   m_Father: {fileID: 9712975}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 233.7, y: 16.3}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -200.5, y: -236}
   m_SizeDelta: {x: 48, y: 48}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 1, y: 1}
 --- !u!114 &219071606
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2811,6 +2811,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxPower: 300
   powerSlider: {fileID: 630688458}
+  ball: {fileID: 1598698488}
 --- !u!1 &942901268
 GameObject:
   m_ObjectHideFlags: 0
@@ -3546,11 +3547,11 @@ RectTransform:
   m_Father: {fileID: 9712975}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 355, y: 111.2}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 177.57904, y: 333.1665}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 1, y: 1}
 --- !u!114 &1215488468
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3587,8 +3588,7 @@ MonoBehaviour:
     20 para o da direita, e 30 para o central.\n\n\n- Teleportador: Manda a bola
     para um local aleatorio dentro de uma determinada area. Sem valor de pontos adicionais,\n\n\n-
     Spinner: Permanece em constante rota\xE7ao. 3 pontos.\n\n\n\n- Ball Stopper:
-    Retira velocidade da bola, pois possui fric\xE7ao maxima. 2 pontos.\n\n(As paredes
-    fornecem 1 ponto)\n"
+    Reduz a velocidade da bola. 2 pontos.\n\n(As paredes fornecem 1 ponto)\n"
 --- !u!222 &1215488469
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3629,11 +3629,11 @@ RectTransform:
   m_Father: {fileID: 9712975}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 233.70003, y: 91}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -200.5, y: -156}
   m_SizeDelta: {x: 48, y: 48}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 1, y: 1}
 --- !u!114 &1253652612
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5890,11 +5890,11 @@ RectTransform:
   m_Father: {fileID: 9712975}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 233.70003, y: 169.7}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -200.5, y: -79.4}
   m_SizeDelta: {x: 48, y: 48}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 1, y: 1}
 --- !u!114 &1818189657
 MonoBehaviour:
   m_ObjectHideFlags: 0
