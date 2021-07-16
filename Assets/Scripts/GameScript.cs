@@ -66,7 +66,7 @@ public class GameScript : MonoBehaviour
             scoreText.text = "Pontos: " + score;
         }
 
-        ballsText.text = "Bolas: " + ball.GetComponent<Ball>().amountOfBalls;
+        ballsText.text = "Bolas:         x" + ball.GetComponent<Ball>().amountOfBalls;
     }
 
     public void GameOver(){

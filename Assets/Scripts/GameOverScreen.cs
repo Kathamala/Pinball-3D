@@ -12,10 +12,12 @@ public class GameOverScreen : MonoBehaviour
     public GameObject ball;
     public GameObject game;
     [HideInInspector] public bool restart = false;
+    public Canvas canvas;
 
     
     public void Setup(int score){
         gameObject.SetActive(true);
+        canvas.renderMode = RenderMode.ScreenSpaceOverlay;
         pointsText.text = score.ToString() + " PONTOS";
 
         rankingText.text = rankingToString(game.GetComponent<GameScript>().ranking);
@@ -24,6 +26,7 @@ public class GameOverScreen : MonoBehaviour
     public void RestartButton(){
         restart = true;
         gameObject.SetActive(false);
+        canvas.renderMode = RenderMode.ScreenSpaceCamera;
     }
 
     public void QuitButton(){
