@@ -15,6 +15,7 @@ public class GameScript : MonoBehaviour
     private bool gameOver = false;
     const int RANKING_SIZE = 5;
     [HideInInspector] public int[] ranking = new int[RANKING_SIZE];
+    public GameObject ballImage;
 
     // Start is called before the first frame update
     void Start()
@@ -37,6 +38,7 @@ public class GameScript : MonoBehaviour
             scoreText.gameObject.SetActive(true);
             ballsText.gameObject.SetActive(true);
             catalog.gameObject.SetActive(true);
+            ballImage.gameObject.SetActive(true);
             gameOver = false;
         }
 
@@ -74,6 +76,7 @@ public class GameScript : MonoBehaviour
             ranking[RANKING_SIZE-1] = score;
             orderRanking();
         }
+        ballImage.gameObject.SetActive(false);
         GameOverScreen.Setup(score);
     }
 
